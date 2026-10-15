@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#FF140A26</color>
+    <color name="card">#FF22123D</color>
+    <color name="pink">#FFFF2E93</color>
+    <color name="cyan">#FF2DE2E6</color>
+    <color name="text">#FFF3EAFF</color>
+
+    <style name="Theme.Radio" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="android:statusBarColor">@color/bg</item>
+        <item name="android:navigationBarColor">@color/bg</item>
+        <item name="colorAccent">@color/pink</item>
+    </style>
+</resources>
