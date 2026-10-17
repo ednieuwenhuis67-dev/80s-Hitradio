@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">80s Hitradio</string>
+
+    <!-- Livestream (MP3) -->
+    <string name="stream_url">https://s22.myradiostream.com:7728/listen.mp3</string>
+
+    <!-- Logo van de website (wordt één keer gedownload en bewaard) -->
+    <string name="logo_url">https://www.80shitradio.nl/wp-content/uploads/2026/09/logo_80shitradio.png</string>
+
+    <!-- Widgets die ook op www.80shitradio.nl staan -->
+    <string name="now_playing_url">https://widgetsv2.autopo.st/widgetsv2/public/J8seizoen/nowplaying</string>
+    <string name="recently_played_url">https://widgetsv2.autopo.st/widgetsv2/public/J8seizoen/recentlyplayed</string>
+
+    <string name="slogan">Terug naar je jeugdherinneringen</string>
+    <string name="now_playing">Nu op de radio</string>
+    <string name="played">Gespeelde nummers</string>
+    <string name="play">▶  Luister live</string>
+    <string name="stop">■  Stop</string>
+    <string name="loading">Verbinden…</string>
+    <string name="error">Stream niet bereikbaar</string>
+</resources>

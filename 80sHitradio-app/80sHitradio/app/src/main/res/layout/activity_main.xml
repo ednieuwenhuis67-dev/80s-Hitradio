@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="16dp" android:background="@color/bg">
+
+    <!-- LOGO (de tekst eronder is reserve als het logo nog niet geladen is) -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent" android:layout_height="150dp"
+        android:adjustViewBounds="true" android:scaleType="fitCenter"
+        android:contentDescription="@string/app_name"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/app_name" android:textColor="@color/pink"
+        android:textSize="32sp" android:textStyle="bold|italic" />
+    <TextView
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/slogan" android:textColor="@color/cyan"
+        android:textSize="14sp" android:layout_marginTop="4dp" android:layout_marginBottom="16dp" />
+
+    <!-- SPELER -->
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="12dp" android:background="@drawable/card">
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/now_playing" android:textColor="@color/text"
+            android:textStyle="bold" android:layout_marginBottom="6dp" />
+        <WebView
+            android:id="@+id/nowPlaying"
+            android:layout_width="match_parent" android:layout_height="130dp" />
+        <Button
+            android:id="@+id/playButton"
+            android:layout_width="match_parent" android:layout_height="64dp"
+            android:layout_marginTop="12dp" android:background="@drawable/button"
+            android:text="@string/play" android:textColor="#FFFFFFFF"
+            android:textSize="20sp" android:textStyle="bold" android:textAllCaps="false" />
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:gravity="center" android:textColor="@color/cyan"
+            android:layout_marginTop="6dp" />
+    </LinearLayout>
+
+    <!-- GESPEELDE NUMMERS -->
+    <TextView
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/played" android:textColor="@color/text"
+        android:textStyle="bold" android:textSize="18sp"
+        android:layout_marginTop="16dp" android:layout_marginBottom="6dp" />
+    <WebView
+        android:id="@+id/recentlyPlayed"
+        android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:background="@drawable/card" />
+</LinearLayout>
